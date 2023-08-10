@@ -1,5 +1,30 @@
-#first {
-  color: red;
-  font-size: 3em;
-  font-weight: bold;
+* {
+  font-family: "Courier New";
+}
+body {
+  background: #f5eee6;
+}
+#wrapper {
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 850px;
+  height: auto;
+  border: 2px solid black;
+}
+#banner {
+  width: 850px;
+  height: 300px;
+  opacity: 0.7;
+}
+#nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  background-color: #f0dfc7;
+  margin-top: -0.5rem;
+}
+#nav a {
+  color: #705a4b;
 }
