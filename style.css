@@ -56,3 +56,22 @@ body {
 .doggyhover {
   border: 2px solid red !important;
 }
+#loves {
+  position: relative;
+}
+.message {
+  position: absolute;
+  background-color: #f7d7ad;
+  opacity: 0.95;
+  width: 300px;
+  height: 300px;
+  border: 2px solid purple;
+  left: 275px;
+  top: 210px;
+  position: absolute;
+  visibility: hidden;
+  padding: 1rem;
+}
+.unhide {
+  visibility: visible;
+}
