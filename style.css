@@ -2,9 +2,10 @@
   font-family: "Courier New";
 }
 body {
-  background: #f5eee6;
+  background: #e8ded1;
 }
 #wrapper {
+  background: #f5eee6;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -20,23 +21,25 @@ body {
 #nav {
   display: flex;
   justify-content: space-evenly;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 0.8rem;
+  padding-top: 1.4rem;
   background-color: #f0dfc7;
   margin-top: -0.6rem;
 }
 #nav a {
   color: #705a4b;
+  text-decoration: none;
 }
 #nav a:hover {
   color: indigo;
 }
 .section {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.8rem;
 }
 .sectionheading {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 .doggy {
@@ -44,6 +47,7 @@ body {
   height: 300px;
   object-fit: cover;
   border: 2px solid black;
+  margin: 0.1rem;
 }
 #intro {
   margin: auto;
@@ -53,7 +57,7 @@ body {
 .text {
   font-size: 1.2rem;
 }
-.doggyhover {
+.hover {
   border: 2px solid red !important;
 }
 #loves {
@@ -74,4 +78,20 @@ body {
 }
 .unhide {
   visibility: visible;
+}
+.codepen {
+  width: 336px;
+  height: 252px;
+  border: 2px solid black;
+  margin: 0.2rem;
+}
+#email {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+#email:hover {
+  color: purple;
+}
+#contact {
+  margin-bottom: 4rem;
 }

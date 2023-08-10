@@ -2,16 +2,33 @@ let doggies = document.querySelectorAll(".doggy");
 
 doggies.forEach(item => {
   item.addEventListener("mouseover", function(e) {
-    item.classList.add("doggyhover");
+    item.classList.add("hover");
     showMessage(e);
   })
   item.addEventListener("mouseout", function(e) {
-    item.classList.remove("doggyhover");
-    hideMessage();
+    item.classList.remove("hover");
+    hideMessage(e);
+  })
+})
+
+let codepens = document.querySelectorAll(".codepen");
+
+codepens.forEach(item => {
+  item.addEventListener("mouseover", function(e) {
+    item.classList.add("hover");
+  })
+  item.addEventListener("mouseout", function(e) {
+    item.classList.remove("hover");
   })
 })
 
 function showMessage(e) {
+  let messages = document.querySelectorAll(".message");
+  
+  messages.forEach(item => {
+    item.classList.remove("unhide");
+  })
+
   let id;
 
   switch(e.target.id) {
@@ -33,6 +50,7 @@ function showMessage(e) {
 }
 
 function hideMessage(e) {
+  if (e.relatedTarget.classList.contains("message")) return;
   document.querySelectorAll(".message").forEach(item => {
     item.classList.remove("unhide")
   })
