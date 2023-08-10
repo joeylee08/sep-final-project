@@ -24,7 +24,7 @@ codepens.forEach(item => {
 
 function showMessage(e) {
   let messages = document.querySelectorAll(".message");
-  
+
   messages.forEach(item => {
     item.classList.remove("unhide");
   })
@@ -52,6 +52,6 @@ function showMessage(e) {
 function hideMessage(e) {
   if (e.relatedTarget.classList.contains("message")) return;
   document.querySelectorAll(".message").forEach(item => {
-    item.classList.remove("unhide")
+    item.classList.remove("unhide");
   })
 }
